@@ -1,0 +1,6 @@
+apache2: /usr/sbin/apachectl -DFOREGROUND
+cron: cron -f
+access_log_normal: tail -F /var/log/apache2/access_sweethomebot.log
+access_log_ssl: tail -F /var/log/apache2/ssl_access_sweethomebot.log
+error_log_normal: tail -F /var/log/apache2/error_sweethomebot.log
+error_log_ssl: tail -F /var/log/apache2/ssl_error_sweethomebot.log
